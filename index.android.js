@@ -3,4 +3,4 @@ import {
 } from 'react-native';
 import App from './src/app';
 
-AppRegistry.registerComponent('boilerplate', () => App);
+AppRegistry.registerComponent('manager', () => App);
