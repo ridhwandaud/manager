@@ -4,11 +4,12 @@ import { createStore } from 'redux';
 import { View, Text } from 'react-native';
 import reducers from './reducers';
 import firebase from 'firebase';
+import { Header } from './components/common';
+import LoginForm from './components/LoginForm';
 
 class App extends Component{
 
 	componentWillMount(){
-		// Initialize Firebase
 	  const config = {
 	    apiKey: 'AIzaSyAKVZr3v2TePkF3kDZ0-Obr_ltzPHkBGDE',
 	    authDomain: 'manager-154fc.firebaseapp.com',
@@ -24,9 +25,8 @@ class App extends Component{
 		return(
 			<Provider store={ createStore(reducers) }>
 				<View>
-					<Text>
-						Hello!
-					</Text>
+					<Header headerText='Manager' />
+					<LoginForm />
 				</View>
 			</Provider>
 		);
