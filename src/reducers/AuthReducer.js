@@ -9,7 +9,8 @@ import {
 const INITIAL_STATE = { 
 	email: '',
 	password: '',
-	error: ''
+	error: '',
+	loading: false
 };
 
 export default (state = INITIAL_STATE, action) => {
